@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.HomeContent {
+    margin: 50px ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+.HomeContent .container {
+    width: 1140px;
+}
+.HomeContent .img1,.img2,.img3  {
+    width: 100%;
+}
+.HomeContent .row {
+    margin: 0px;
+}
+.HomeContent .img1 {
+    height: 250px;
+}
+
+.HomeContent .img2 {
+    height: 250px;
+}
+.HomeContent .img3 {
+    height: 250px;
+}
+.HomeContent h4 {
+    margin-top: 20px;
+
+}
+
+@media only screen and (max-width: 520px) {
+   .HomeContent .row{
+       display: block;
+   }
+   .HomeContent .col-4 {
+       margin-bottom: 40px;
+   }
+
+}
+
+
+
+
+
+

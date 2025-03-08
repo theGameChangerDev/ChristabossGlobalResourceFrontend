@@ -1,0 +1,161 @@
+
+
+
+/*@media screen and (min-width: 901px)
+.container {
+    width: 901px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+
+
+.ContactSec .container {
+    width: 901px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+}
+.ContactSec {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+h5 {
+    text-align: center;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold; 
+
+}
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.col-12 {
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+.form-group {
+    width: 100%;
+    margin: 2px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+   
+    border: 0 none;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Khula', sans-serif;
+    background: #49BFAE;
+    color: rgb(141, 140, 140);
+    padding-left: 12px;
+}
+.text-center {
+    text-align: center;
+    padding-left: 14px;
+    
+    
+}
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 50px;
+}
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 50px;
+
+}
+ .marg {
+    margin-top: 20px;
+}
+h6 {
+    text-align: center;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold; 
+
+}
+
+
+
+
+

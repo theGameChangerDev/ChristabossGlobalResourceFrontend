@@ -1,0 +1,9 @@
+.content {
+    flex-grow: 1;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

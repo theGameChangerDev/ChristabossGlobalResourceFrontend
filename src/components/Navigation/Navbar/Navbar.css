@@ -1,0 +1,31 @@
+body {
+  font-family: "Noto Serif", serif;
+}
+
+ul {
+  display: flex;
+}
+
+.navbar-brand img {
+  height: 280px;
+  width: 320px;
+}
+
+
+
+.navbar {
+  height: 140px;
+}
+.Navbar-content {
+  border: 1px solid rgb(228, 228, 233);
+  position: ;
+  font-family: "Noto Serif", serif;
+}
+.nav-item {
+  padding-left: 31px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: blue;
+}
+ 
