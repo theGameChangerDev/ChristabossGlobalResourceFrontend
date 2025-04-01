@@ -5,11 +5,16 @@ curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt install -y nodejs
 ``
 
-`git clone`
+`git clone https://github.com/theGameChangerDev/ChristabossGlobalResourceFrontend`
 
-`cd ChiristabossWeb`
+`cd ChristabossGlobalResourceFrontend`
 
 `npm install`
 `npm start`
 
 `npm run build`
+
+```
+sudo npm install -g serve
+serve -s build
+```
