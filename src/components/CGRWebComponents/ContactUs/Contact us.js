@@ -8,21 +8,39 @@ function Contactus() {
     const [ phoneNo, setPhoneNo ] = useState("")
     const [ email, setEmail ] = useState("")
     const [ prodOrder, setOrder ] = useState("")
+    const [isLoading, setIsLoading] = useState(false)
+    const [successMessage, setSuccessMessage] = useState("")
+    const [errorMessage, setErrorMessage] = useState("") 
 
-    const submitForm = () => {
+    const submitForm = (e) => {
+        e.preventDefault(); // Prevent default form submission
+        
+        // Show loading state
+        setIsLoading(true);
+        
         let formData = {
             name: fullname,
             phone: phoneNo,
             email: email,
-            order: prodOrder
+            message: prodOrder // Changed from "order" to "message"
         }
-
+    
         axios.post("/api/form", formData)
             .then(res => {
-                console.log(res)
-            }).catch( (err) => {
-                console.log(err)
-            })
+                // Show success message
+                setSuccessMessage("Message sent successfully!");
+                // Clear form
+                setFullname("");
+                setPhoneNo("");
+                setEmail("");
+                setOrder("");
+            }).catch((err) => {
+                // Show error message
+                setErrorMessage("Failed to send message. Please try again.");
+                console.log(err);
+            }).finally(() => {
+                setIsLoading(false);
+            });
     }
 
     return ( 
@@ -40,9 +58,12 @@ function Contactus() {
                     </strong>  
                     <div className='row-1'>
                         <div className='col-12'>
-                            
-                          <form className='form1' >
-                            <div class="form-group">
+                        
+                        {isLoading && <div className="alert alert-info">Sending message...</div>}
+                        {successMessage && <div className="alert alert-success">{successMessage}</div>}
+                        {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
+                         <form className='form1' onSubmit={submitForm}>
+                           <div class="form-group">
                                     <div class="row">
                                     <div class="col-12">
                                         <input type="text" 
@@ -78,14 +99,12 @@ function Contactus() {
                                     </div>
                                     <br />
                                     <div class="text-center">
-                                    
-                                    <div class="row">
-                                        <button onClick={submitForm} 
-                                        class="btn btn-primary btn-lg align-center">Send</button>
+                                        <div class="row">
+                                        <button type="submit" 
+                                            class="btn btn-primary btn-lg align-center">Send</button>
+                                        </div>
                                     </div>
-
-                                    </div>
-                            </form>
+                                </form>
 
                         </div>
                     </div>  
