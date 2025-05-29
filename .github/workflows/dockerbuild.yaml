@@ -27,6 +27,6 @@ jobs:
     
       - name: Build and push Docker image
         run: |
-          docker build -t mayorfaj/cglobr:1.0.1 ./Dockerfile
+          docker build -t mayorfaj/cglobr:1.0.1 .
           docker push mayorfaj/cglobr:1.0.1
 
